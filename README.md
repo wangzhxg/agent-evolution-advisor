@@ -51,6 +51,51 @@ This is a deliberately conservative skill for **human-approved improvement**.
 - `检查 MEMORY 和 daily memory 分层`
 - `看一下最近工具和 workflow 有没有优化点`
 
+## Installation / How to use
+
+### Option 1: Install from a release asset
+If you want the easiest path, download one of the release assets:
+
+- `agent-evolution-advisor.skill`
+- `agent-evolution-advisor.skill.zip`
+
+Recommended:
+- use `.skill` if you want the native skill package
+- use `.skill.zip` if you prefer a more generic download format
+
+Then import the skill into your OpenClaw environment using your normal local skill installation flow.
+
+### Option 2: Use from source
+You can also clone or download this repository and use the extracted skill directory directly:
+
+```text
+agent-evolution-advisor/
+```
+
+Place that directory into your local OpenClaw skills area, or use it as a base for your own modified version.
+
+### How to trigger it
+After installation, invoke the skill with review-style prompts such as:
+
+- `复盘最近 2 天 Agent 表现`
+- `看一下最近回答质量`
+- `审一下规则漂移`
+- `看一下最近工具和 workflow 有没有优化点`
+
+### What to expect
+This is a read-only review skill.
+
+By default, it will:
+- inspect recent runtime behavior
+- review rule drift, memory hygiene, interaction quality, tooling reliability, and workflow design
+- produce structured recommendations
+
+By default, it will not:
+- modify code
+- patch config
+- rewrite rule files
+- change production behavior automatically
+
 ## Included files
 
 - `SKILL.md` — workflow, scope, and boundaries
